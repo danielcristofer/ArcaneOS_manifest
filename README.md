@@ -18,7 +18,7 @@
 ```bash
 
 # Initialize local repository
-repo init -u https://github.com/ArcaneOS/Arcane_manifest -b R
+repo init -u https://github.com/danielcristofer/ArcaneOS_manifest -b R
 
 # Sync
 repo sync -c -j$(nproc --all) --force-sync --no-clone-bundle --no-tags
@@ -35,7 +35,7 @@ $ . build/envsetup.sh
 $ lunch aosp_$device-userdebug
 
 # Build the code
-$ mka bacon -jX
+$ mka bacon -j$(nproc --all)
 ```
 ### Credits ###
  * [**PixelExperience**](https://github.com/PixelExperience)
